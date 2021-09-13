@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="agenda.css" media="screen">
+    <title>Agenda | JMC Contabilidade</title>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1 id="titulo">Agendamento de Reuniões</h1><br>
+        <!-- <p id="subtitulo">Insira os dados da Reunião</p> -->
+        <br>
+    </div>
+
+    <form>
+        
+        <fieldset class="grupo">
+            <div class="campo">
+                <legend></legend>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="campo">
+                <label for="phone"><strong>Telefone/Celular</strong></label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="(99) 9999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Número de telefone precisa ser no formato (99) 9999-9999"/>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <br><label><strong>Com qual departamento deseja fazer a reunião?</strong></label><br>
+                <input type="checkbox" id="departamento1" name="departamento1" value="direcao">
+                <label for="departamento1">Direção (Marcelo)</label><br>
+                <input type="checkbox" id="departamento2" name="departamento2" value="legalizacao">
+                <label for="departamento2">Legalização (Francisco)</label><br>
+                <input type="checkbox" id="departamento3" name="departamento3" value="contabil">
+                <label for="departamento3">Contabilidade (Josiane)</label><br>
+                <input type="checkbox" id="departamento4" name="departamento4" value="rh">
+                <label for="departamento4">RH/DP (Valdirene/Daniel)</label><br>
+                <input type="checkbox" id="departamento5" name="departamento5" value="fiscal">
+                <label for="departamento5">Fiscal (Thiago)</label>
+            </div>
+        </fieldset>
+
+        <div class="campo" id="tiporeuniao">
+            <br><label><Strong>A reunião será</Strong></label>
+            <select id="tipoReuniao">
+                <option selected disabled value="">Selecione</option>
+                <option>Presencial</option>
+                <option>Remota</option>
+            </select>
+        </div>
+
+        <div class="campo" id="txtarea">
+            <br><label><strong>Descrição da Reunião</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <br><button class = "botao" type="submit">Concluído</button><br><br>
+
+        
+    </form>
+    
+    <div id="rodape" class="imagem">
+        <label id="contato"><strong>jmc@jmccontabilidade.com.br <br> Fone: (16)3610-3099</strong></label>
+        <a href="https://www.facebook.com/jmccontabilidade.com.br">
+            <img id="primeira" src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01/23fd2a2be53141ed810f4d3dcdcd01fa.webp"
+            width="40" height="40">
+        </a>
+        <a href="https://www.instagram.com/jmccontabilidaderp/">
+            <img id="centro" src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01/81af6121f84c41a5b4391d7d37fce12a.webp" 
+            width="40" height="40">
+        </a>
+        <a href="https://www.google.com/search?q=jmc+contabilidade&rlz=1C1GCEU_pt-BRBR948BR948&oq=jmc+cont&aqs=chrome.1.69i57j35i39j69i59j35i39j0i512j69i60l2j69i61.2002j0j7&sourceid=chrome&ie=UTF-8">
+            <img id="centro" src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_31,h_31,al_c,q_85,usm_0.66_1.00_0.01/7528824071724d12a3e6c31eee0b40d4.webp"
+            width="40" height="40">
+        </a>
+    </div>
+</body>
+</html>
